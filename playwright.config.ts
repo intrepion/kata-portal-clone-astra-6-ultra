@@ -5,7 +5,8 @@ export default defineConfig({
   testMatch: "browser.spec.ts",
   fullyParallel: false,
   workers: 1,
-  timeout: 90_000,
+  // Hosted runners render WebGL in software; retain headroom for the full UI flow.
+  timeout: 120_000,
   expect: { timeout: 8_000 },
   reporter: "list",
   use: {
