@@ -211,6 +211,7 @@ test("selection, instructions, keyboard movement, fallback look, pause, resume a
 test("real camera raycasts place portals and keyboard movement traverses their rendered connection", async ({
   page,
 }) => {
+  await page.clock.install();
   await fallbackMouse(page);
   await start(page);
   await aimAtPanel(page, 0);
@@ -236,12 +237,17 @@ test("real camera raycasts place portals and keyboard movement traverses their r
   ).toBe(1);
   await aimAtPanel(page, 0);
   await page.keyboard.down("KeyW");
-  await expect
-    .poll(() => page.evaluate(() => window.__PARALLAX__.game.state.teleports), {
-      timeout: 15_000,
-    })
-    .toBe(1);
-  await page.keyboard.up("KeyW");
+  try {
+    // Each frame caps physics time. Software rendering on CI can take more than
+    // 15 wall-clock seconds to simulate this walk, so run every animation frame
+    // for two seconds of game time instead of racing the renderer's frame rate.
+    await page.clock.runFor(2000);
+  } finally {
+    await page.keyboard.up("KeyW");
+  }
+  expect(
+    await page.evaluate(() => window.__PARALLAX__.game.state.teleports),
+  ).toBe(1);
   expect(
     await page.evaluate(() => window.__PARALLAX__.game.state.position.z),
   ).toBeLessThan(-3);
