@@ -72,3 +72,7 @@ The production output is written to `dist/`. Run `npm run preview` to inspect th
 The game uses original procedural geometry, canvas-generated signage, and synthesized audio. DM Sans and Space Grotesk are bundled locally through the `@fontsource-variable/dm-sans` and `@fontsource-variable/space-grotesk` packages. Fonts and other application assets are served with the game; gameplay has no dependency on external asset services or network APIs at runtime.
 
 The source is available under the [MIT License](LICENSE), copyright © 2026 Oliver Forral. Dependency and font licenses remain with their respective authors. _Portal_ and Valve are referenced only to identify the gameplay inspiration.
+
+## Play online
+
+[Play the hosted game](https://intrepion.github.io/kata-portal-clone-astra-6-ultra/)
