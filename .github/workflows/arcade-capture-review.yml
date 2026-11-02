@@ -28,7 +28,7 @@ jobs:
         env:
           CAPTURE_OUTPUT: capture-output
         run: |
-          export GAME_SOURCE_COMMIT="$(git rev-parse HEAD^)"
+          export GAME_SOURCE_COMMIT="713ee95db1d5496fc9db53a8e8630503cdcc8eca"
           python3 -m http.server 4267 --bind 127.0.0.1 --directory capture-site > /tmp/parallax-astra-http.log 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
