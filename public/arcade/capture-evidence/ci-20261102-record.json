@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "workflowCommit": "9c493e9c4b88833205aa123f1bf30f30bc212339",
+  "sourceCommit": "713ee95db1d5496fc9db53a8e8630503cdcc8eca",
+  "runId": "41429042691",
+  "url": "http://127.0.0.1:4267/",
+  "inputs": {
+    "index.html": "f2d530a9409a088c228c4904db3eb1b496ba17c77d01e338e6ebb8673384bc4d",
+    "assets/dm-sans-latin-ext-wght-normal-BOFOeGcA.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
+    "assets/dm-sans-latin-wght-normal-Xz1IZZA0.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "assets/index-2pF-QlJ_.css": "08b8fe36e3395989cf3c80b6bfbef330bec06ad35e9b59bd32436ebc974c3abf",
+    "assets/index-vTtO2EhX.js": "3ef17a865bd44efc375b6b938c58595388a78ed50363f573ec9c5ed61fa23bb0",
+    "assets/space-grotesk-latin-ext-wght-normal-D9tNdqV9.woff2": "952dddb45d2f96f71cbf3b7f510b24379afc3c89ea02fcf89d377b45d62c0166",
+    "assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+    "assets/space-grotesk-vietnamese-wght-normal-D0rl6rjA.woff2": "8895e3d49825128bfa5238e4c96e9b432d7a3dadbe5c17c6081267398305dc71"
+  },
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1280,
+    "height": 1000
+  },
+  "screenshots": ["parallax-astra-01.png", "parallax-astra-02.png"]
+}
