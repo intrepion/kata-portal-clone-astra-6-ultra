@@ -76,3 +76,7 @@ The source is available under the [MIT License](LICENSE), copyright © 2026 Oliv
 ## Play online
 
 [Play the hosted game](https://intrepion.github.io/kata-portal-clone-astra-6-ultra/)
+
+## Arcade metadata
+
+See [docs/arcade-metadata.md](docs/arcade-metadata.md) for the game-owned manifest and screenshot provenance.
